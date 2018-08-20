@@ -1,0 +1,28 @@
+#column1{
+	width:75%;
+	margin-top:2.5em;
+}
+#column2{    
+	width: 20%;
+    max-width: 190px;
+    position: relative;
+    margin-top: 0px;
+}
+#column2 div{
+	width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-image: url("../Images/404_sign.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h1 {
+	font-size:2.5em; 
+	margin:0;
+}
+
+p.message{
+	font-weight:bold;
+	margin-top: 0.5em;
+}

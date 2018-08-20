@@ -1,0 +1,97 @@
+@font-face {
+    font-family: Gothic;
+    src: url("Questrial-Regular.ttf");
+}
+html{height: 100%}
+
+body{
+	font-family: Gothic, Sans-Serif;
+	font-size: 0.8em;
+     -webkit-font-smoothing: antialiased;
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+	min-height: 100%;
+	color: rgb(225, 225, 225);
+	background-image: url("../Images/body-bkg.png");
+}
+
+p{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+a{
+	text-decoration: none; 
+	cursor: pointer;
+	color: rgb(225, 225, 225);
+}
+
+.green{
+	color: rgb(130, 202, 156);
+}
+
+.full-width{width: 100%;}
+.center-main{margin:auto;}
+
+.block{
+	background-color: rgb(0,0,0.95);
+	padding: 13px;
+}
+
+.divider{}
+
+.page-title{
+	font-size: 3em;
+    -webkit-font-smoothing: none;
+    margin: 25px 0;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.block-title{
+	font-size: 1.5em;
+	margin-bottom:10px;
+}
+
+.plus, .minus{
+	-webkit-touch-callout: none; /* iOS Safari */
+  	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+  	-khtml-user-select: none;    /* Konqueror */
+  	-moz-user-select: none;      /* Firefox */
+  	-ms-user-select: none;
+}
+
+
+/************************* Navbar ***********************/
+.navbar{
+	background-color: black;
+	height: 70px;
+	text-align: center;
+}
+
+.navlinks{
+	padding-top: 28px;
+    font-size: 1.2em;
+}
+
+.navlinks a{margin-right: 4%;}
+.navlinks a:last-of-type{margin-right: 0px;}
+.navlinks a:hover{color:rgb(130, 202, 156);}
+
+/*********************** Footer Bar *********************/
+.footer{
+	height: 35px;
+    bottom: 0px;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.footer .copyright{
+	margin-top: 0px;
+	padding-top: 13px;
+}
+
+
+

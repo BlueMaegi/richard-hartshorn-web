@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>404</title>
+	<link rel='shortcut icon' href='/Images/favicon.ico' type='image/x-icon'/ >
+	<script type="text/javascript" src="/JsLib/jquery-3.1.0.js"></script>
+	<script type="text/javascript" src="/ViewControllers/CommonViewController.js"></script>
+	<link rel="stylesheet" type="text/css" href="/Styles/Common.css">
+	<link rel="stylesheet" type="text/css" href="/Styles/Error.css">
+	<script type="text/javascript">
+	$(function(){
+		$(window).resize(setImage);
+		$(window).on("loadscripts", setImage);
+		
+		function setImage()
+		{
+			console.log($("body").height());
+			console.log($(".navbar").height());
+			$("#column2").height($("body").height() - $(".navbar").height() - $(".footer-filler").height());
+			var ratio = 1.824;
+			$("#column2 div").height($("#column2 div").width() * ratio);
+		}
+	});
+	</script>
+</head>
+<body>
+	<div class="template autoload" rel="navbar"></div>
+	<div class="center-main">
+		<div id="column1">
+			<h1>OOPS!</h1>
+			<p class="message">This page does not exist. Click <a href="/index.html" class="title">here</a> to go to our homepage.</p>
+		</div>
+		<div id="column2">
+			<div></div>
+		</div>
+	</div>
+	<div class="center-main footer-filler"></div>
+	<div class="template autoload" rel="footer"></div>
+</body>
+</html>
