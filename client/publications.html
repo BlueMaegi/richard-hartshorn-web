@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>Publications</title>
+	<link rel='shortcut icon' href='Images/favicon-richard.ico' type='image/x-icon'/ >
+	<script type="text/javascript" src="JsLib/jquery-3.1.0.js"></script>
+	<script type="text/javascript" src="ViewControllers/CommonViewController.js"></script>
+	<script type="text/javascript" src="ViewControllers/PublicationViewController.js"></script>
+	<link rel="stylesheet" type="text/css" href="Styles/Common.css">
+	<link rel="stylesheet" type="text/css" href="Styles/Publications.css">
+</head>
+<body>
+	<div class="gradient">&nbsp;</div>
+	<div class="template autoload" rel="navbar"></div>
+	<div class="center-wrapper">
+		<div class="center-main">
+			<p class="section-title green"><span>&#9660;</span>Short Stories</p>
+		</div>
+		<div class="center-main block"  data-state="open">
+			<div class="data-template autoload" rel="publication" data-param="short-story" data-page="1">
+			</div>
+			<p class="load-more">Show More...</p>
+		</div>
+	
+		<div class="center-main">
+			<p class="section-title green"><span>&#9660;</span>Essays</p>
+		</div>
+		<div class="center-main block" data-state="open">
+			<div class="data-template autoload" rel="publication" data-param="essay" data-page="1">
+			</div>
+			<p class="load-more">Show More...</p>
+		</div>	
+		
+		<div class="center-main">
+			<p class="section-title green"><span>&#9660;</span>Miscellaneous</p>
+		</div>
+		<div class="center-main block" data-state="open">
+			<div class="data-template autoload" rel="publication" data-param="misc" data-page="1">
+			</div>
+			<p class="load-more">Show More...</p>
+		</div>
+		<div class="footer-filler">&nbsp;</div>
+	</div>
+	<div class="template autoload" rel="footer"></div>
+</body>
+</html>

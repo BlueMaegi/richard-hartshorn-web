@@ -1,0 +1,14 @@
+.pub-details{
+	margin: -6px 0 20px 4%;
+    font-size: 0.75em;
+}
+
+.pub-details:last-of-type{
+	margin-bottom: 5px;
+}
+
+.section-title{
+	cursor: pointer;
+}
+
+.block a:hover{text-decoration:underline rgb(130, 202, 156);}
