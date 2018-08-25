@@ -1,10 +1,8 @@
 <?php
 //INCLUDES-----------------------------------------------------------------
-require_once($_SERVER['DOCUMENT_ROOT'].'/../server/Config/MainConfig.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/../richard-api/Config/MainConfig.php');
 //-------------------------------------------------------------------------
 $DB = "";
-//connect_to_db(); //automatically attempt to connect on inclusion
-
 
 //Attempt a global connection to the DB
  function connect_to_db()
@@ -19,7 +17,6 @@ $DB = "";
  }
  
  //closes the database connection and resets the global variable
- //TODO: CALL THIS IN A PLACE THAT MAKES SENSE, like Logout or something
  function close_db()
  {
 	global $DB;
@@ -125,5 +122,16 @@ function sanitize_for_HTML($uncleanString)
 	$uncleanString = htmlentities($uncleanString);
 	$cleanString = preg_replace('/[&<>"=]/','', $uncleanString);
 	return $cleanString;
+}
+
+function get_paging($pageNum, $pageSize)
+{
+	if($pageNum > 0 && $pageSize > 0)
+	{
+		$skip = $pageSize * ($pageNum - 1);
+		return " LIMIT ".$skip.", ".$pageSize;
+	}
+	
+	return "";
 }
 ?>
