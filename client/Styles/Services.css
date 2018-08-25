@@ -1,0 +1,18 @@
+.service-column{
+	display:inline-block;
+	width: 45%;
+    vertical-align: top;
+    margin: 20px auto 0 0;
+}
+
+.service-column:first-of-type{margin-right:9%;}
+
+.inquiries{
+	text-align: center;
+	font-size: 1em;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.inquiries a:hover {color:rgb(130, 202, 156);}
+
