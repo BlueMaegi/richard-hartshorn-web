@@ -1,8 +1,14 @@
 #logo{
-    width: 45%;
+    width: 42%;
     background-size: contain;
     margin: 28px auto;
 	background-image: url("../Images/header-logo.png");
+}
+.post-date{
+    margin-top: -5px;
+    margin-bottom: 18px;
+    font-size: 0.8em;
+    font-weight: bold;
 }
 
 
