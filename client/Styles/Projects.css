@@ -1,0 +1,20 @@
+.project{
+	display:inline-block;
+	width: 45%;
+    vertical-align: top;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px rgb(0,0,0);
+}
+
+.thumbnail{
+	border: 1px solid rgb(225, 225, 225);
+	border-radius: 3px;
+	box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.35);
+	cursor: pointer;
+	background-size: contain;
+	background-position: center center;
+    margin-bottom: 5px;
+	
+}
+.project:nth-child(odd){margin-right: 9%;}
+
