@@ -15,6 +15,8 @@ $(function(){
 		loadImages();
 	
 		$('.navlinks a[href="'+filename+'"]').addClass('current');
+		if(filename.length <= 0)
+			$('.navlinks a[href="index.html"]').addClass('current');
 		$('.copyright span').text((new Date()).getFullYear());
 		FormatDates($('[data-format="date"]'));
 		FormatDates($('[data-format="datetime"]'), true);
